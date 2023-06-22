@@ -32,6 +32,14 @@ public class Nuevoejemplo { //nombre de la clase principal
                     System.out.print("la resta de los dos numero es: "+resultado);
                     break;
                     
+                    case 2: System.out.print("ingrese el primer numero:");
+                     num1 = sn.nextDouble();
+                    System.out.print("ingrese el segundo numero:");
+                    num2= sn.nextDouble();
+                    resultado= num1 * num2;
+                    System.out.print("la multiplicacion de los dos numero es: "+resultado);
+                    break;
+                    
             
         }
     }
