@@ -6,7 +6,7 @@ public class Nuevoejemplo { //nombre de la clase principal
         double num1, num2, resultado; //variables a utilizar
         int opcion;
         Scanner sn = new Scanner(System.in);//sn es el nombre del objeto y el system in es para que el usuario ingrese un dato
-        
+        /*
         System.out.print("Hola, soy un asistente virtual. \nPor favor ingrese un numero: ");
         num1 = sn.nextDouble();// sn llamas a scanner .nextdouble solo para dato double
         
@@ -14,7 +14,7 @@ public class Nuevoejemplo { //nombre de la clase principal
         num2 =  sn.nextDouble();
         
         System.out.println("Los datos ingresados por el usuario son: "+num1+" y "+num2);//agregarle + y + al o la variable que este dentro
-        
+        */
         System.out.println("ingrese un numero del 1 al 5 de la operacion que desea realizar");
         System.out.println("1. resta");
         System.out.println("2. multiplicacion");
@@ -39,6 +39,41 @@ public class Nuevoejemplo { //nombre de la clase principal
                     resultado= num1 * num2;
                     System.out.print("la multiplicacion de los dos numero es: "+resultado);
                     break;
+                    
+                    case 3: System.out.print("ingrese el primer numero:");
+                     num1 = sn.nextDouble();
+                    System.out.print("ingrese el segundo numero:");
+                    num2= sn.nextDouble();
+                    resultado= num1 / num2;
+                    System.out.print("la division de los dos numero es: "+resultado);
+                    break;
+                    
+                    case 4: System.out.print("ingrese el numero que desea elevar:");
+                     num1 = sn.nextDouble();
+                    System.out.print("ingrese el numero de veces que desea elevarlo:");
+                    num2= sn.nextDouble();
+                    
+                    
+                    resultado= Math.pow(num1, num2);
+                    System.out.print("la potencia de los dos numero es: "+resultado);
+                    break;
+                    
+                    case 5: System.out.print("ingrese el primer numero:");
+                     num1 = sn.nextDouble();
+                    System.out.print("ingrese el segundo numero:");
+                    num2= sn.nextDouble();
+                    resultado= num1 + num2;
+                    System.out.print("la suma de los dos numero es: "+resultado);
+                    break;
+                    
+                    case 6: System.out.print("ingrese el primer numero:");
+                     num1 = sn.nextDouble();
+                    double raiz = Math.sqrt(num1);
+                    resultado= raiz;
+                    System.out.print("la raiz cuadrada del numero es: "+resultado);
+                    break;
+                    
+                    
                     
             
         }
